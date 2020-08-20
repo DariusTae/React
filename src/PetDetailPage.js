@@ -1,7 +1,11 @@
 import React from 'react';
 import Navigation from './Navigation'
-const PetDetailPage = () =>
-    <div>PetDetailPage component</div>
+import PetDetails from './PetDetails'
+const PetDetailPage = props =>
+  <React.Fragment>
+    <Navigation></Navigation>
+    <PetDetails pet={props.pet}/>
+  </React.Fragment>
 ;
 
 export default PetDetailPage;
